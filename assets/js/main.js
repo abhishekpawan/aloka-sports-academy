@@ -40,6 +40,12 @@
     el.addEventListener('scroll', listener)
   }
 
+//   const dropdown=document.querySelector('.menu-item-has-children')
+//   const i = document.createElement("i");
+//   i.className = "bi bi-chevron-down"
+// dropdown.appendChild(i);
+
+
   /**
    * Navbar links active state on scroll
    */
@@ -109,11 +115,11 @@
   /**
    * Mobile nav toggle
    */
-  // on('click', '.mobile-nav-toggle', function(e) {
-  //   select('#navbar').classList.toggle('navbar-mobile')
-  //   this.classList.toggle('bi-list')
-  //   this.classList.toggle('bi-x')
-  // })
+  on('click', '.mobile-nav-toggle', function(e) {
+    select('#navbar').classList.toggle('navbar-mobile')
+    this.classList.toggle('bi-list')
+    this.classList.toggle('bi-x')
+  })
 
   /**
    * Mobile nav dropdowns activate
